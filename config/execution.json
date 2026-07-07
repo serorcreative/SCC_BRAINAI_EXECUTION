@@ -1,0 +1,13 @@
+{
+  "scc_root": "..",
+  "paths": {
+    "data_dir": "data"
+  },
+  "as_of": "2026-07-06T00:00:00+00:00",
+  "authorized_actors": [],
+  "default_job_kind": "echo",
+  "integrate_decision": true,
+  "integrate_planning": true,
+  "provider_order": ["deterministic"],
+  "extra": {}
+}

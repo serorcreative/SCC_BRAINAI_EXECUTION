@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scc-brainai-execution"
+version = "1.0.0"
+description = "Couche d'exécution de BrainAI — reçoit un manifeste décisionnel validé et pilote son exécution sous contrôle en déléguant au Runtime. Garde-fous stricts, aucune exécution automatique, stdlib pur, déterministe, sans réseau."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Proprietary" }
+authors = [{ name = "Seror Créative" }]
+keywords = ["scc", "brainai", "execution", "runtime", "governance"]
+dependencies = []
+
+[project.scripts]
+scc-brain-execution = "scc_brainai_execution.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
